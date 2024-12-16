@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+.nav-bar {
+    justify-items: center;
+    position: absolute;
+    text-align: center;
+}
+.nav-bar a {
+    justify-content: center;
+    color: aliceblue;
+    display: inline;
+    align-items: center;
+    text-align: center;
+}
+
