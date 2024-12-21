@@ -26,8 +26,11 @@ nav {
     padding: 10px;
 }
 
-
-
-.me{
-    display: none;
+.arrow{
+    display: flex;
+    width: 433px;
+    height: 200px;
+    padding: 34.661px 142.192px 118px 237.287px;
+    justify-content: flex-end;
+    align-items: center;
 }
