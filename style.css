@@ -9,10 +9,13 @@
 body {
     background-color: #1A1A1A;
 }
-.nav-bar {
-    justify-items: center;
-    position: absolute;
-    text-align: center;
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
 }
 .nav-bar a {
     justify-content: center;
@@ -20,5 +23,11 @@ body {
     display: inline;
     align-items: center;
     text-align: center;
+    padding: 10px;
 }
 
+
+
+.me{
+    display: none;
+}
