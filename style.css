@@ -24,6 +24,7 @@ nav {
     align-items: center;
     text-align: center;
     padding: 10px;
+    font-weight: bolder;
 }
 
 .arrow{
@@ -33,4 +34,10 @@ nav {
     padding: 34.661px 142.192px 118px 237.287px;
     justify-content: flex-end;
     align-items: center;
+}
+
+.nav-bar a:hover {
+    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    font-size: 18px;
+    text-decoration: underline;
 }
