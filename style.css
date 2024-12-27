@@ -27,17 +27,15 @@ nav {
     font-weight: bolder;
 }
 
-.arrow{
-    display: flex;
-    width: 433px;
-    height: 200px;
-    padding: 34.661px 142.192px 118px 237.287px;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .nav-bar a:hover {
     transition: font-size 0.3s ease, text-decoration 0.3s ease;
     font-size: 18px;
     text-decoration: underline;
+}
+
+.arrow{
+    display: flex;
+    width: 200px;
+    height: 150px;
+    align-items: center;
 }
