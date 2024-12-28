@@ -39,3 +39,8 @@ nav {
     height: 150px;
     align-items: center;
 }
+
+.me {
+    display: flex;
+    color: aliceblue;
+}
