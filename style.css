@@ -5,11 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
     background-color: #1A1A1A;
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -26,20 +24,32 @@ nav {
     padding: 10px;
     font-weight: bolder;
 }
-
 .nav-bar a:hover {
     transition: font-size 0.3s ease, text-decoration 0.3s ease;
     font-size: 18px;
     text-decoration: underline;
 }
-
 .arrow{
     display: flex;
     width: 200px;
     height: 150px;
     align-items: center;
 }
-
+.title {
+    font-size: 35px;
+}
+.presentation {
+    padding-top: 125px;
+    padding-left: 25px;
+}
+.presentation-text {
+    width: 700px;
+    font-size: 17px;
+}
+.profile {
+    width: 500px;
+    padding: 50px;
+}
 .me {
     display: flex;
     color: aliceblue;
