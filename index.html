@@ -6,6 +6,7 @@
     <title>Yo's portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" type="png" href="Profile.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="nav-bar">   
@@ -25,14 +26,30 @@
                 Python. At the moment, I’m diving deeper into JavaScript and enjoying the journey of 
                 mastering it to expand my toolkit. Apart from coding, I have a creative side as well—I 
                 love working on design projects using Figma, where I get to bring ideas to life visually.
-                <br>
+                <br><br>
                 When I’m not programming or diving into something new to learn, you’ll probably find me 
                 unwinding with my favorite anime, getting lost in a good book, or enjoying an adventure 
                 in the world of video games. It’s great to have you here, and I hope you enjoy exploring 
                 this space with me!
             </p>
-            
         </div>
+    </div>
+
+    <div class="contact-form">
+        <div class="contact-header">
+            <h1>Wanna contact me ?</h1>
+            <p>If you want to contact me you can with the form down here</p>
+        </div>
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i> Send
+            </button>
+        </form>
     </div>
     <script src="sript.js"></script>
 </body>
