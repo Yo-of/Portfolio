@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
 :root{
-    --blue: #13376A;
+    --blue: rgb(19, 55, 106);
     --black: rgb(26, 32, 43);
     --gray: rgb(21, 24, 30);
-    --white: #f0f8ff;
-    --jet: #443F4D;
-    --plum: #774B74;
-    --purple: #7A26B3;
-    --lgray: #404040;
-    --dgray: #5C5C5C;
+    --white: rgb(240, 248, 255);
+    --jet: rgb(68, 63, 77);
+    --plum: rgb(119, 75, 116);
+    --purple: rgb(122, 38, 179);
+    --lgray: rgb(64, 64, 64);
+    --dgray: rgb(92, 92, 92);
 }
 
 * {
@@ -15,11 +17,13 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'SUSE', 'Poppins', sans-serif;
 }
 body {
     background-color: var(--gray);
 }
+
+/*Navbar Style Start*/
 nav {
     display: flex;
     justify-content: center;
@@ -42,36 +46,93 @@ nav {
     font-size: 18px;
     text-decoration: underline;
 }
+/*Navbar Style End*/
+
+/*Presentation Style Start*/
+.profile-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+ .cowned-yo {
+    position: relative;
+ }
+
+.profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+.crown {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-65%);
+    width: 269px;
+    height: 173px;
+}
+.lines {
+    top: 0;
+    position: absolute;
+    width: 325px;
+    height: 325px;
+}
+.line-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100px;
+    width: 2px;
+    background-color: rgb(255, 255, 255, 0.25);
+    transform: translateY(-50%);
+}
+.line-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 2px;
+    width: 200px;
+    background-color: rgb(255, 255, 255, 0.25);
+}
 .title {
     font-size: 35px;
-}
-.presentation {
-    padding-top: 125px;
-    padding-left: 25px;
-}
-.presentation-text {
-    width: 700px;
-    font-size: 17px;
-}
-.profile {
-    width: 400px;
-    padding: 50px;
-}
-.me {
-    display: flex;
-    color: var(--white);
+    width: 250px;
 }
 
+.presentation {
+    position: relative;
+    top: 25px;
+}
+.presentation-text {
+    width: 650px;
+    font-size: 17px;
+}
+.me {
+    justify-items: center;
+    position: absolute;
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    top: 150px;
+    left: 75px;
+    gap: 125px;
+}
+/*Presentation Style Start*/
 
 /*Contact form style start*/
 .contact-form {
+    position: relative;
+    top: 1000px;
     justify-self: center;
     text-align: center;
     background-color: var(--black);
     padding: 20px;
     border-radius: 10px;
-    width: 450px;
+    width: 650px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: var(--white);
 }
 .contact-header h1 {
     margin-bottom: 10px;
