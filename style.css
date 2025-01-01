@@ -124,7 +124,7 @@ nav {
 /*Project Style*/
 .project {
     position: relative;
-    top: 800px;
+    top: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,6 +132,10 @@ nav {
     height: 100vh;
     background-color: transparent;
     gap: 40px;
+}
+h1.project-title {
+    position: relative;
+    color: var(--white);
 }
 /*Zippy Style*/
 .zippy {
