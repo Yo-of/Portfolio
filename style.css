@@ -133,7 +133,7 @@ nav {
     background-color: transparent;
     gap: 40px;
 }
-h1.project-title {
+.project-title {
     position: relative;
     color: var(--white);
 }
