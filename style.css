@@ -127,107 +127,156 @@ nav {
 
 /*Project Style*/
 /*Project Zippy Style Start*/
+/* Container for the project */
 .project {
+    position: relative;
+    top: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
     flex-direction: column;
+    height: 100vh;
+    background-color: transparent;
     gap: 40px;
 }
+
+/* Styling for the Zippy section */
 .zippy {
     display: flex;
     align-items: center;
-    padding: 40px;
-    max-width: 1150px;
-    width: 100%;
-    border-radius: 10px;
     background-color: var(--gray);
+    padding: 40px;
+    width: 1150px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    top: 350px;
-    color: var(--white);
-    font-family: 'SUSE';
 }
 .zippy-logo {
-    width: 500px;
+    width: 400px;
     height: auto;
     margin-right: 30px;
 }
 .logo-delimiter-1 {
-    position: absolute;
-    top: 50%;
-    left: 525px;
-    height: 150px;
+    height: 175px;
     width: 2px;
-    background-color: rgb(255, 255, 255, 0.15);
-    transform: translateY(-50%);
+    background-color: var(--dgray);
+    position: absolute;
+    left: 480px;
 }
 .zippy-title {
     font-size: 32px;
     font-weight: bold;
+    color: var(--white);
     margin-bottom: 10px;
 }
 .zippy-description {
     font-size: 18px;
+    color: var(--white);
     line-height: 1.6;
     text-align: justify;
 }
 .zippy-description a {
-    font-size: 18px;
+    color: var(--white);
+    text-decoration: none;
     transition: font-size 0.3s ease, text-decoration 0.3s ease;
 }
 .zippy-description a:hover {
     font-size: 20px;
-    color: var(--white);
     font-weight: 600;
     transition: font-size 0.3s ease, text-decoration 0.3s ease;
-}
-/*Project Zippy Style End*/
 
-/*Project Snooke Style Start*/
+}
 .snooke {
-    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: var(--gray);
     padding: 40px;
-    max-width: 1150px;
-    width: 100%;
+    width: 1150px;
     border-radius: 10px;
-    top: 2000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .snooke-logo {
-    width: 500px;
+    width: 375px;
     height: auto;
-    margin-right: 30px;
+    margin-right: 55px;
+    left: 100px;
 }
 .logo-delimiter-2 {
-    position: absolute;
-    top: 50%;
-    left: 525px;
-    height: 150px;
+    height: 175px;
     width: 2px;
-    background-color: rgb(255, 255, 255, 0.15);
-    transform: translateY(-50%);
+    background-color: var(--dgray);
+    position: absolute;
+    left: 480px;
 }
 .snooke-title {
     font-size: 32px;
     font-weight: bold;
+    color: var(--white);
     margin-bottom: 10px;
 }
 .snooke-description {
     font-size: 18px;
+    color: var(--white);
     line-height: 1.6;
     text-align: justify;
 }
-
-
+.snooke-description a {
+    color: var(--white);
+    text-decoration: none;
+    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+}
+.snooke-description a:hover {
+    font-size: 20px;
+    font-weight: 600;
+    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+}
+.portfolio {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 40px;
+    width: 1150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.portfolio-logo {
+    width: 400px;
+    height: 250px;
+    margin-right: 55px;
+    left: 0;
+}
+.logo-delimiter-3 {
+    height: 175px;
+    width: 2px;
+    background-color: var(--dgray);
+    position: absolute;
+    left: 510px;
+}
+.portfolio-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.portfolio-description {
+    font-size: 18px;
+    color: var(--white);
+    line-height: 1.6;
+    text-align: justify;
+}
+.portfolio-description a {
+    color: var(--white);
+    text-decoration: none;
+    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+}
+.portfolio-description a:hover {
+    font-size: 20px;
+    font-weight: 600;
+    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+}
 /*Contact form Style Start*/
 .contact-form {
     position: relative;
-    top: 1000px;
+    top: 1200px;
     justify-self: center;
     text-align: center;
     background-color: var(--black);
@@ -305,3 +354,25 @@ form textarea::placeholder {
     opacity: 0.75;
 }
 /*Contact form style end*/
+
+/*Socials style*/ 
+
+.footer {
+    position: relative;
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    bottom: -1200px;
+}
+
+.footer .social-link a {
+    color: var(--white);
+    margin: 0 10px;
+    text-decoration: none;
+    transition-color: 0.3s;
+    gap: 10px;
+}
+
+.footer.social-link a:hover {
+    font-weight: bold;
+}
