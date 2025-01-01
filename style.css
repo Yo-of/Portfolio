@@ -124,7 +124,7 @@ nav {
 /*Project Style*/
 .project {
     position: relative;
-    top: 850px;
+    top: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,7 +277,7 @@ nav {
 /*Contact form Style*/
 .contact-form {
     position: relative;
-    top: 1200px;
+    top: 1350px;
     justify-self: center;
     text-align: center;
     background-color: var(--black);
@@ -362,7 +362,7 @@ form textarea::placeholder {
     color: var(--white);
     text-align: center;
     padding: 20px;
-    bottom: -1200px;
+    bottom: -1350px;
 }
 .footer .social {
     gap: 200px;
