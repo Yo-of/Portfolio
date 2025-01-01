@@ -49,6 +49,7 @@ nav {
 /*Navbar Style End*/
 
 /*Presentation Style Start*/
+/*PP Style Start*/
 .profile-container {
     position: relative;
     display: inline-block;
@@ -76,16 +77,16 @@ nav {
 .lines {
     top: 0;
     position: absolute;
-    width: 325px;
-    height: 325px;
+    width: 350px;
+    height: 335px;
 }
 .line-right {
     position: absolute;
     top: 50%;
     right: 0;
-    height: 100px;
+    height: 75px;
     width: 2px;
-    background-color: rgb(255, 255, 255, 0.25);
+    background-color: rgb(255, 255, 255, 0.15);
     transform: translateY(-50%);
 }
 .line-bottom {
@@ -93,9 +94,11 @@ nav {
     bottom: 0;
     left: 20%;
     height: 2px;
-    width: 200px;
-    background-color: rgb(255, 255, 255, 0.25);
+    width: 165px;
+    background-color: rgb(255, 255, 255, 0.15);
 }
+/*PP Style End*/
+/*Presentation text Style Start*/
 .title {
     font-size: 35px;
     width: 250px;
@@ -119,9 +122,10 @@ nav {
     left: 75px;
     gap: 125px;
 }
+/*Presentation text Style End*/
 /*Presentation Style Start*/
 
-/*Contact form style start*/
+/*Contact form Style Start*/
 .contact-form {
     position: relative;
     top: 1000px;
