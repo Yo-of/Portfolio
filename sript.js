@@ -1,16 +1,41 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent the form from reloading the page
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
   
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const message = e.target.message.value;
+    const name = e.target.name.value.trim();
+    const email = e.target.email.value.trim();
+    const message = e.target.message.value.trim();
   
-    if (name && email && message) {
-      console.log('Form Submitted:', { name, email, message });
-      alert('Thank you for your message!');
-      e.target.reset(); // Clear the form
-    } else {
+    if (!name || !email || !message) {
       alert('Please fill in all fields.');
+      return;
     }
-  });
   
+    const formData = {
+      name,
+      email,
+      message,
+    };
+  
+    fetch('https://formspree.io/f/mzzzjlyb', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Formspree Response:', data);
+        alert("Thank you for your message! I'll contact you back as soon as possible 🙂");
+        e.target.reset();
+      })
+      .catch(error => {
+        console.error('Error occurred:', error);
+        alert('There was an issue submitting your message. Please try again.');
+      });
+  });  
