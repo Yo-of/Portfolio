@@ -2,8 +2,9 @@
 
 :root{
     --blue: rgb(19, 55, 106);
-    --black: rgb(26, 32, 43);
-    --gray: rgb(21, 24, 30);
+    --black: rgb(31, 35, 45);
+    --gray: rgb(28, 29, 31);
+    --gray2: rgb(21, 24, 30);
     --white: rgb(240, 248, 255);
     --jet: rgb(68, 63, 77);
     --plum: rgb(119, 75, 116);
@@ -20,7 +21,7 @@
     font-family: 'SUSE', 'Poppins', sans-serif;
 }
 body {
-    background-color: var(--gray);
+    background-color: var(--gray2);
 }
 
 /*Navbar Style Start*/
@@ -103,7 +104,6 @@ nav {
     font-size: 35px;
     width: 250px;
 }
-
 .presentation {
     position: relative;
     top: 25px;
@@ -124,6 +124,105 @@ nav {
 }
 /*Presentation text Style End*/
 /*Presentation Style Start*/
+
+/*Project Style*/
+/*Project Zippy Style Start*/
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+}
+.zippy {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    max-width: 1150px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--gray);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 350px;
+    color: var(--white);
+    font-family: 'SUSE';
+}
+.zippy-logo {
+    width: 500px;
+    height: auto;
+    margin-right: 30px;
+}
+.logo-delimiter-1 {
+    position: absolute;
+    top: 50%;
+    left: 525px;
+    height: 150px;
+    width: 2px;
+    background-color: rgb(255, 255, 255, 0.15);
+    transform: translateY(-50%);
+}
+.zippy-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.zippy-description {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.zippy-description a {
+    font-size: 18px;
+    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+}
+.zippy-description a:hover {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+}
+/*Project Zippy Style End*/
+
+/*Project Snooke Style Start*/
+.snooke {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 40px;
+    max-width: 1150px;
+    width: 100%;
+    border-radius: 10px;
+    top: 2000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.snooke-logo {
+    width: 500px;
+    height: auto;
+    margin-right: 30px;
+}
+.logo-delimiter-2 {
+    position: absolute;
+    top: 50%;
+    left: 525px;
+    height: 150px;
+    width: 2px;
+    background-color: rgb(255, 255, 255, 0.15);
+    transform: translateY(-50%);
+}
+.snooke-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.snooke-description {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
 
 /*Contact form Style Start*/
 .contact-form {
