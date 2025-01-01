@@ -12,7 +12,6 @@
     --lgray: rgb(64, 64, 64);
     --dgray: rgb(92, 92, 92);
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -361,12 +360,15 @@ form textarea::placeholder {
     padding: 20px;
     bottom: -1200px;
 }
-.footer .social-link a {
+.footer .social {
+    gap: 200px;
+}
+.footer .social .social-link a {
     color: var(--white);
     margin: 0 10px;
     text-decoration: none;
     gap: 10px;
 }
-.footer.social-link a:hover {
+.footer .social .social-link a:hover {
     font-weight: bold;
 }
