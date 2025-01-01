@@ -24,7 +24,7 @@ body {
     background-color: var(--gray2);
 }
 
-/*Navbar Style Start*/
+/*Navbar Style*/
 nav {
     display: flex;
     justify-content: center;
@@ -47,10 +47,10 @@ nav {
     font-size: 18px;
     text-decoration: underline;
 }
-/*Navbar Style End*/
 
-/*Presentation Style Start*/
-/*PP Style Start*/
+
+/*Presentation Style*/
+/*PP Style*/
 .profile-container {
     position: relative;
     display: inline-block;
@@ -58,8 +58,7 @@ nav {
 }
  .cowned-yo {
     position: relative;
- }
-
+}
 .profile {
     width: 300px;
     height: 300px;
@@ -98,8 +97,7 @@ nav {
     width: 165px;
     background-color: rgb(255, 255, 255, 0.15);
 }
-/*PP Style End*/
-/*Presentation text Style Start*/
+/*Presentation text Style*/
 .title {
     font-size: 35px;
     width: 250px;
@@ -122,12 +120,9 @@ nav {
     left: 75px;
     gap: 125px;
 }
-/*Presentation text Style End*/
-/*Presentation Style Start*/
+
 
 /*Project Style*/
-/*Project Zippy Style Start*/
-/* Container for the project */
 .project {
     position: relative;
     top: 800px;
@@ -139,8 +134,7 @@ nav {
     background-color: transparent;
     gap: 40px;
 }
-
-/* Styling for the Zippy section */
+/*Zippy Style*/
 .zippy {
     display: flex;
     align-items: center;
@@ -185,6 +179,7 @@ nav {
     transition: font-size 0.3s ease, text-decoration 0.3s ease;
 
 }
+/*Snooke Style*/
 .snooke {
     display: flex;
     align-items: center;
@@ -229,6 +224,7 @@ nav {
     font-weight: 600;
     transition: font-size 0.3s ease, text-decoration 0.3s ease;
 }
+/*Portfolio Style*/
 .portfolio {
     display: flex;
     align-items: center;
@@ -273,7 +269,9 @@ nav {
     font-weight: 600;
     transition: font-size 0.3s ease, text-decoration 0.3s ease;
 }
-/*Contact form Style Start*/
+
+
+/*Contact form Style*/
 .contact-form {
     position: relative;
     top: 1200px;
@@ -353,10 +351,9 @@ form textarea::placeholder {
     color: var(--white);
     opacity: 0.75;
 }
-/*Contact form style end*/
 
-/*Socials style*/ 
 
+/*Footer style*/ 
 .footer {
     position: relative;
     color: var(--white);
@@ -364,15 +361,12 @@ form textarea::placeholder {
     padding: 20px;
     bottom: -1200px;
 }
-
 .footer .social-link a {
     color: var(--white);
     margin: 0 10px;
     text-decoration: none;
-    transition-color: 0.3s;
     gap: 10px;
 }
-
 .footer.social-link a:hover {
     font-weight: bold;
 }
