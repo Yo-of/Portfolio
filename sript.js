@@ -38,4 +38,20 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
         console.error('Error occurred:', error);
         alert('There was an issue submitting your message. Please try again.');
       });
-  });  
+  });
+
+document.querySelectorAll('.nav-bar a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});

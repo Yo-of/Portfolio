@@ -39,14 +39,13 @@ nav {
     text-align: center;
     padding: 10px;
     font-weight: bolder;
-    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
 }
 .nav-bar a:hover {
-    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
     font-size: 18px;
     text-decoration: underline;
 }
-
 
 /*Presentation Style*/
 /*PP Style*/
@@ -54,8 +53,9 @@ nav {
     position: relative;
     display: inline-block;
     text-align: center;
+    top: 30px;
 }
- .cowned-yo {
+.cowned-yo {
     position: relative;
 }
 .profile {
@@ -98,15 +98,16 @@ nav {
 }
 /*Presentation text Style*/
 .title {
-    font-size: 35px;
-    width: 250px;
+    font-size: 40px;
+    width: 275px;
+    margin-bottom: 15px;
 }
 .presentation {
     position: relative;
     top: 25px;
 }
 .presentation-text {
-    width: 650px;
+    width: 700px;
     font-size: 17px;
 }
 .me {
@@ -115,16 +116,15 @@ nav {
     display: flex;
     color: var(--white);
     align-items: center;
-    top: 150px;
+    top: 95px;
     left: 75px;
     gap: 125px;
 }
 
-
 /*Project Style*/
 .project {
     position: relative;
-    top: 900px;
+    top: 1050px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,13 +173,13 @@ nav {
 }
 .zippy-description a {
     color: var(--white);
-    text-decoration: none;
-    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    text-decoration: underline;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
 }
 .zippy-description a:hover {
     font-size: 20px;
     font-weight: 600;
-    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
 
 }
 /*Snooke Style*/
@@ -219,13 +219,13 @@ nav {
 }
 .snooke-description a {
     color: var(--white);
-    text-decoration: none;
-    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    text-decoration: underline;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
 }
 .snooke-description a:hover {
     font-size: 20px;
     font-weight: 600;
-    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
 }
 /*Portfolio Style*/
 .portfolio {
@@ -239,7 +239,7 @@ nav {
 }
 .portfolio-logo {
     width: 400px;
-    height: 250px;
+    height: auto;
     margin-right: 55px;
     left: 0;
 }
@@ -264,20 +264,19 @@ nav {
 }
 .portfolio-description a {
     color: var(--white);
-    text-decoration: none;
-    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    text-decoration: underline;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
 }
 .portfolio-description a:hover {
     font-size: 20px;
     font-weight: 600;
-    transition: font-size 0.3s ease, text-decoration 0.3s ease;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
 }
-
 
 /*Contact form Style*/
 .contact-form {
     position: relative;
-    top: 1350px;
+    top: 1500px;
     justify-self: center;
     text-align: center;
     background-color: var(--black);
@@ -355,14 +354,16 @@ form textarea::placeholder {
     opacity: 0.75;
 }
 
-
 /*Footer style*/ 
 .footer {
     position: relative;
     color: var(--white);
     text-align: center;
     padding: 20px;
-    bottom: -1350px;
+    bottom: -1500px;
+}
+.footer .follow {
+    margin-bottom: 15px;
 }
 .footer .social {
     gap: 200px;
@@ -372,7 +373,104 @@ form textarea::placeholder {
     margin: 0 10px;
     text-decoration: none;
     gap: 10px;
+    transition: font-weight 0.2s ease;
 }
 .footer .social .social-link a:hover {
     font-weight: bold;
+    transition: font-weight 0.2s ease;
+}
+
+/*Responsive*/
+@media (max-width: 1200px) {
+    .zippy, .snooke, .portfolio {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 20px;
+    }
+    .zippy-logo, .snooke-logo, .portfolio-logo {
+        margin-right: 0;
+        max-width: 300px;
+        width: 100%;
+
+    }
+    .logo-delimiter-1, .logo-delimiter-2, .logo-delimiter-3 {
+        display: none;
+    }
+    .zippy-description, .snooke-description, .portfolio-description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+    }
+    .nav-bar a {
+        font-size: 16px;
+        padding: 8x;
+    }
+    .profile-container {
+        top: 20px;
+    }
+    .profile {
+        width: 200px;
+        height: 200px;
+    }
+    .presentation-text {
+        width: 90%;
+        font-size: 15px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .me {
+        flex-direction: column;
+        gap: 50px;
+        top: 50px;
+    }
+    .project {
+        top: 800px;
+        gap: 20px;
+    }
+    form {
+        gap: 10px;
+    }
+    form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .presentation {
+        top: 10px;
+    }
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+    .profile-container {
+        top: 10px;
+    }
+    .zippy, .snooke, .portfolio {
+        padding: 10px;
+        width: 100%;
+    }
+    .zippy-title, .snooke-title, .portfolio-title {
+        font-size: 24px;
+    }
+    .contact-header h1 {
+        font-size: 20px;
+    }
+    .footer .social .social-link a {
+        margin: 0 5px;
+    }
 }
