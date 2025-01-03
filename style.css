@@ -50,10 +50,11 @@ nav {
 /*Presentation Style*/
 /*PP Style*/
 .profile-container {
-    position: relative;
+    position: absolute;
     display: inline-block;
     text-align: center;
-    top: 30px;
+    top: 150px;
+    left: 50px;
 }
 .cowned-yo {
     position: relative;
@@ -101,14 +102,16 @@ nav {
     font-size: 40px;
     width: 275px;
     margin-bottom: 15px;
-}
-.presentation {
-    position: relative;
-    top: 25px;
+    position: absolute;
+    right: 525px;
+    top: 75px;
 }
 .presentation-text {
     width: 700px;
     font-size: 17px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
 }
 .me {
     justify-items: center;
@@ -116,9 +119,8 @@ nav {
     display: flex;
     color: var(--white);
     align-items: center;
-    top: 95px;
-    left: 75px;
-    gap: 125px;
+    width: 100%;
+    height: 800px;
 }
 
 /*Project Style*/
@@ -157,7 +159,7 @@ nav {
     width: 2px;
     background-color: var(--dgray);
     position: absolute;
-    left: 480px;
+    left: 510px;
 }
 .zippy-title {
     font-size: 32px;
@@ -203,7 +205,7 @@ nav {
     width: 2px;
     background-color: var(--dgray);
     position: absolute;
-    left: 480px;
+    left: 510px;
 }
 .snooke-title {
     font-size: 32px;
@@ -381,7 +383,7 @@ form textarea::placeholder {
 }
 
 /*Responsive*/
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
     .zippy, .snooke, .portfolio {
         flex-direction: column;
         align-items: center;
@@ -472,5 +474,228 @@ form textarea::placeholder {
     }
     .footer .social .social-link a {
         margin: 0 5px;
+    }
+}*/
+
+/* Responsive Styles */
+
+/* Navbar */
+/*
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-bar a {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+/* Presentation Section
+@media screen and (max-width: 768px) {
+    .me {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        top: 50px;
+    }
+    .profile {
+        width: 200px;
+        height: 200px;
+    }
+    .presentation-text {
+        width: 90%;
+        font-size: 15px;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
+
+/* Projects Section 
+@media screen and (max-width: 768px) {
+    .project {
+        padding: 20px;
+        gap: 20px;
+    }
+    .zippy, .snooke, .portfolio {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .zippy-logo, .snooke-logo, .portfolio-logo {
+        width: 80%;
+    }
+    .logo-delimiter-1, .logo-delimiter-2, .logo-delimiter-3 {
+        display: none;
+    }
+    .zippy-description, .snooke-description, .portfolio-description {
+        width: 90%;
+        font-size: 15px;
+    }
+}
+
+/* Contact Form 
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+    }
+    form input, form textarea {
+        font-size: 14px;
+    }
+    form button {
+        font-size: 14px;
+        gap: 5px;
+    }
+}
+
+/* Footer 
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 15px;
+    }
+    .footer .social {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .social-link a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+}
+
+/* Extra Small Devices 
+@media screen and (max-width: 480px) {
+    .nav-bar a {
+        font-size: 12px;
+    }
+    .presentation-text {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .zippy-title, .snooke-title, .portfolio-title {
+        font-size: 24px;
+    }
+    .contact-form h1 {
+        font-size: 20px;
+    }
+    .contact-form p {
+        font-size: 12px;
+    }
+}
+*/
+
+/* Responsive Styles */
+
+/* Navbar */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-bar a {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+/* Presentation Section */
+@media screen and (max-width: 768px) {
+    .me {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        top: 50px;
+    }
+    .profile {
+        width: 200px;
+        height: 200px;
+    }
+    .presentation-text {
+        width: 90%;
+        font-size: 15px;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
+
+/* Projects Section */
+@media screen and (max-width: 768px) {
+    .project {
+        padding: 20px;
+        gap: 20px;
+    }
+    .zippy, .snooke, .portfolio {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .zippy-logo, .snooke-logo, .portfolio-logo {
+        width: 80%;
+    }
+    .logo-delimiter-1, .logo-delimiter-2, .logo-delimiter-3 {
+        display: none;
+    }
+    .zippy-description, .snooke-description, .portfolio-description {
+        width: 90%;
+        font-size: 15px;
+    }
+}
+
+/* Contact Form */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+    }
+    form input, form textarea {
+        font-size: 14px;
+    }
+    form button {
+        font-size: 14px;
+        gap: 5px;
+    }
+}
+
+/* Footer */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 15px;
+    }
+    .footer .social {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .social-link a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px) {
+    .nav-bar a {
+        font-size: 12px;
+    }
+    .presentation-text {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .zippy-title, .snooke-title, .portfolio-title {
+        font-size: 24px;
+    }
+    .contact-form h1 {
+        font-size: 20px;
+    }
+    .contact-form p {
+        font-size: 12px;
     }
 }
