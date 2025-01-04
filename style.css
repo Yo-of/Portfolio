@@ -275,10 +275,33 @@ nav {
     transition: font-size 0.2s ease, text-decoration 0.2s ease;
 }
 
+/*Services*/
+.service {
+    position: absolute;
+    top: 2300px;
+    color: #fff;
+    width: 1000px;
+    left: 50px;
+    font-size: 18px;
+}
+.web-dev-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.offer-list {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.offer-list li {
+    padding: 5px;
+}
+
+
 /*Contact form Style*/
 .contact-form {
     position: relative;
-    top: 1500px;
+    top: 1900px;
     justify-self: center;
     text-align: center;
     background-color: var(--black);
@@ -362,7 +385,7 @@ form textarea::placeholder {
     color: var(--white);
     text-align: center;
     padding: 20px;
-    bottom: -1500px;
+    bottom: -1900px;
 }
 .footer .follow {
     margin-bottom: 15px;
