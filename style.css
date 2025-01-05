@@ -297,11 +297,22 @@ nav {
     padding: 5px;
 }
 
+.contact-a {
+    color: aliceblue;
+    text-decoration: underline;
+    margin-left: 2px;
+}
+
+.contact-a:hover {
+    font-weight: 600;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
+}
+
 
 /*Contact form Style*/
 .contact-form {
     position: relative;
-    top: 1900px;
+    top: 1950px;
     justify-self: center;
     text-align: center;
     background-color: var(--black);
@@ -385,7 +396,7 @@ form textarea::placeholder {
     color: var(--white);
     text-align: center;
     padding: 20px;
-    bottom: -1900px;
+    bottom: -1950px;
 }
 .footer .follow {
     margin-bottom: 15px;
