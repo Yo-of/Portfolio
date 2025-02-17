@@ -311,7 +311,7 @@ nav {
 /*Contact form Style*/
 .contact-form {
     position: relative;
-    top: 2150px;
+    top: 2050px;
     justify-self: center;
     text-align: center;
     background-color: var(--black);
@@ -395,7 +395,7 @@ form textarea::placeholder {
     color: var(--white);
     text-align: center;
     padding: 20px;
-    bottom: -2150px;
+    bottom: -2050px;
 }
 .footer .follow {
     margin-bottom: 15px;
